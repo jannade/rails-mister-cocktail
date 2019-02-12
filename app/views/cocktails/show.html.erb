@@ -14,7 +14,7 @@
     <h1><%= @cocktail.name  %></h1>
   </div>
   <div class="card-product">
-    <img src="https://i.pinimg.com/originals/3b/e8/4f/3be84f60f80fc652eddb4fb5386f3835.jpg">
+    <%= cl_image_tag @cocktail.photo %>
     <div class="card-product-infos">
       <h2>Ingredients</h2>
       <div class="ingredients-center">
@@ -27,3 +27,5 @@
     </div>
   </div>
 </div>
+
+
