@@ -1,43 +1,35 @@
-.card-cocktail {
+.card {
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin-top: 40px;
 }
 
-.card-cocktail > img {
+.card > img {
   height: 200px;
   width: 100%;
   object-fit: cover;
 }
 
-.card-cocktail h2 {
+.card h2 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
 }
 
-.card-cocktail p {
+.card p {
   font-size: 12px;
   opacity: .7;
   margin: 0;
   text-decoration: none;
 }
 
-
-.card-cocktail .card-cocktail-infos {
+.card .card-infos {
   padding: 16px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
-}
-
-.card-cocktail-infos .card-cocktail-user {
-  position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
 }
 
 .card-link:hover {
@@ -47,4 +39,19 @@
 
 .card-link {
   color: #877A1B;
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }

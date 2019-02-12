@@ -8,16 +8,22 @@
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 50px;
+  font-size: 80px;
+  letter-spacing: 10px;
   font-weight: bold;
   font-family: 'Pacifico', cursive;
+  text-align: center;
+  width: 100%;
 }
 
 .banner p {
-  font-size: 35px;
+  font-size: 40px;
   color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
   margin-top: 10px;
+  letter-spacing: 4px;
   font-family: 'Pacifico', cursive;
+  width: 100%;
+  text-align: center;
 }

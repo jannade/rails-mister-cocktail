@@ -1,18 +1,21 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://static.vinepair.com/wp-content/uploads/2016/05/fresh-herb-cocktails-2.jpg);">
-  <div class="container">
-    <h1>Cocktails for every mood</h1>
-    <p>It's always 5 o'clock somewhere...</p>
-  </div>
+
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url(https://static.vinepair.com/wp-content/uploads/2016/05/fresh-herb-cocktails-2.jpg);">
+    <div class="container">
+      <h1>Moodtails</h1>
+      <p>Cocktails for every mood</p>
+    </div>
 </div>
 
-<div class="container">
+
+<div class="container text-center">
   <div class="row">
     <% @cocktails.each do |cocktail| %>
-      <div class="col-xs-4">
+      <div class="col-xs-12 col-sm-6 col-md-4">
         <%= link_to cocktail_path(cocktail.id), class: "card-link" do %>
-          <div class="card-cocktail">
+          <div class="card">
             <img src="https://i.pinimg.com/originals/3b/e8/4f/3be84f60f80fc652eddb4fb5386f3835.jpg">
-            <div class="card-cocktail-infos">
+            <div class="card-infos">
                 <h2><%= cocktail.name %></h2>
             </div>
           </div>

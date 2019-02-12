@@ -1,21 +1,29 @@
+
 <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://static.vinepair.com/wp-content/uploads/2016/05/fresh-herb-cocktails-2.jpg)">
 </div>
 
-<div class="container">
-  <div class="right-btn">
+<div class="navbar-lewagon">
+  <div class="navbar-lewagon-actions">
     <%= link_to "Add ingredient", new_cocktail_dose_path(@cocktail.id), class: "btn-ghost" %>
-    <%= link_to "Back to all", cocktails_path, class: "btn-ghost" %>
+    <%= link_to "Back to all cocktails", cocktails_path, class: "btn-ghost" %>
   </div>
-
-  <h1><%= @cocktail.name  %></h1>
-
-  <ul>
-      <% @doses.each do |dose| %>
-        <li>
-          <p><%= dose.description %> of <%= @ingredients.find(dose.ingredient_id).name %> </p>
-        </li>
-      <% end  %>
-  </ul>
 </div>
 
-
+<div class="container text-center">
+  <div class="card-header">
+    <h1><%= @cocktail.name  %></h1>
+  </div>
+  <div class="card-product">
+    <img src="https://i.pinimg.com/originals/3b/e8/4f/3be84f60f80fc652eddb4fb5386f3835.jpg">
+    <div class="card-product-infos">
+      <h2>Ingredients</h2>
+      <div class="ingredients-center">
+        <% @doses.each do |dose| %>
+          <li>
+            <p><%= dose.description %> of <strong><%= @ingredients.find(dose.ingredient_id).name %></strong></p>
+          </li>
+        <% end  %>
+      </div>
+    </div>
+  </div>
+</div>
